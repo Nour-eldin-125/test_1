@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    android:background="@drawable/rec2"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/profileimg"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/user"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/profname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Noor eldin"
+        android:textSize="24sp"
+        app:layout_constraintTop_toBottomOf="@id/profileimg"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+        android:id="@id/info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Student"
+        android:textSize="18dp"
+        app:layout_constraintTop_toBottomOf="@id/profname"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <ImageView
+        android:id="@+id/backicon"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:src="@drawable/back"
+        android:onClick="tomap"
+        />
+    <ImageView
+        android:id="@+id/moreicon"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:src="@drawable/more"
+
+        />
+    <TextView
+        android:id="@+id/course.point"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="7"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/point"
+        app:layout_constraintTop_toBottomOf="@id/info"
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:id="@+id/point.point"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="193,79"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/info"
+        android:layout_marginTop="15dp"/>
+    <TextView
+        android:id="@+id/rank.point"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="11"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@id/point"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/info"
+        android:layout_marginTop="15dp"/>
+    <TextView
+        android:id="@+id/course"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Courses"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/point"
+        app:layout_constraintTop_toBottomOf="@id/course.point"
+        />
+
+    <TextView
+        android:id="@+id/point"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Points"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/point.point"
+        />
+    <TextView
+        android:id="@+id/rank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rank"
+        app:layout_constraintStart_toEndOf="@id/point"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rank.point"
+        />
+    <ImageView
+        android:layout_marginTop="15dp"
+        android:id="@+id/icon.1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/icon"
+        app:layout_constraintTop_toBottomOf="@id/course"
+        app:layout_constraintBottom_toTopOf="@id/icon.2"
+
+        />
+    <ImageView
+        android:id="@+id/icon.2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/icon_2"
+        app:layout_constraintTop_toBottomOf="@id/icon.1"
+        app:layout_constraintBottom_toTopOf="@id/icon.3"/>
+    <ImageView
+        android:id="@+id/icon.3"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/icon_3"
+        app:layout_constraintTop_toBottomOf="@id/icon.2"
+        app:layout_constraintBottom_toTopOf="@id/icon.4"
+        />
+    <ImageView
+        android:id="@+id/icon.4"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/icon_4"
+        app:layout_constraintTop_toBottomOf="@id/icon.3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/icon1.txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quick learner"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/point"
+        app:layout_constraintBottom_toTopOf="@id/icon2txt"
+        app:layout_constraintStart_toEndOf="@id/icon.1"
+        android:layout_marginLeft="20dp"
+        />
+    <TextView
+        android:id="@+id/icon1.txt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Complete 1 course"
+        app:layout_constraintTop_toBottomOf="@id/icon1.txt"
+        app:layout_constraintStart_toEndOf="@id/icon.1"
+        android:layout_marginLeft="20dp"
+
+        />
+    <TextView
+        android:id="@+id/icon2txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Master Mind"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/icon1.txt"
+        app:layout_constraintBottom_toTopOf="@id/icon3txt"
+        app:layout_constraintStart_toEndOf="@id/icon.2"
+        android:layout_marginLeft="20dp"
+        />
+    <TextView
+        android:id="@+id/icon2txt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Got 1st place on leaderboard"
+        app:layout_constraintTop_toBottomOf="@id/icon2txt"
+        app:layout_constraintStart_toEndOf="@id/icon.1"
+        android:layout_marginLeft="20dp"
+        />
+    <TextView
+        android:id="@+id/icon3txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Super learner"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/icon2txt"
+        app:layout_constraintBottom_toTopOf="@id/icon4txt"
+        app:layout_constraintStart_toEndOf="@id/icon.1"
+        android:layout_marginLeft="20dp"
+        />
+    <TextView
+        android:id="@+id/icon3txt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Complete more than 5 courses"
+        app:layout_constraintTop_toBottomOf="@id/icon3txt"
+        app:layout_constraintStart_toEndOf="@id/icon.1"
+        android:layout_marginLeft="20dp"
+        />
+    <TextView
+        android:id="@+id/icon4txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="The Achiever"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/icon3txt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/icon.1"
+        android:layout_marginLeft="20dp"
+        />
+    <TextView
+        android:id="@+id/icon4txt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="logged in everyday for a month"
+        app:layout_constraintTop_toBottomOf="@id/icon4txt"
+        app:layout_constraintStart_toEndOf="@id/icon.1"
+        android:layout_marginLeft="20dp"
+        />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
